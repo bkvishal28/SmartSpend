@@ -6,7 +6,13 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/expenses")
-@CrossOrigin(origins = "http://localhost:5173")
+
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "https://smart-spend-pi-eosin.vercel.app"
+})
+
 public class ExpenseController {
 
     private final ExpenseRepository expenseRepository;
