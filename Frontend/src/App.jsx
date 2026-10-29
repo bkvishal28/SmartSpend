@@ -2,7 +2,9 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 
-const API_URL = 'http://localhost:8080/api/expenses'
+
+const API_URL = 'https://smartspend-rbh2.onrender.com/api/expenses'
+
 
 const CATEGORIES = [
   'Food',
